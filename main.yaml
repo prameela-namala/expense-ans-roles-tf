@@ -1,0 +1,9 @@
+ #Two variables we should pass
+
+- name: "configure {{component}}server"
+  hosts: all
+  bacome: yes
+  vars_files:
+  - "variables-{{environment}}.yaml"
+  roles:
+  - "{{ component }}"
